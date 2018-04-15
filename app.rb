@@ -15,7 +15,7 @@ module FormsLab
     #add instance variables here
     @pirate = Pirate.new(params[:pirate])
 
-    params[:pirate][:ships].each do |details| #why error? this is not empty
+    params[:pirate][:ships].each do |details| 
       Ship.new(details)
     end
 
